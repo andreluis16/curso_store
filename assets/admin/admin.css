@@ -1,0 +1,53 @@
+/* 
+    Created on : 28 de ago de 2021, 16:33:43
+    Author     : andre
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    background: #218BC3;
+}
+
+header #logo{
+    max-height: 30px;
+}
+
+header a{
+    color: #fff;
+}
+
+#content{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: left;
+
+}
+
+.form div{
+    padding: 10px;
+     
+}
+.table {
+     width: 100%;
+     
+}
+
+.table th{
+    background: #ccc;
+    border: 1px solid #666;
+}
+
+.table td{
+    border: 1px solid #ccc;
+}
+
+.small-blocked-image {
+    max-width: 100px;
+    display: block;
+}
