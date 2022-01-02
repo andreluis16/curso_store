@@ -66,14 +66,15 @@ class BannerControler extends \App\Controlers\Abstracts\BaseControler{
         $bannerRepository = new \App\Repositories\BannerRepository(\Framework\DB\Connection::getConnection());
         $bannerGetService = new \App\Services\BannerGetService($bannerRepository);
         $banner = $bannerGetService->get($bannerId);
+           
+        $data['banner'] = $banner;
+        $data['page'] = 'Admin/bannerEditView';
+        $this->view('Admin/indexView', $data);
         
          } catch (\Exception $e) {
             echo 'Error on insert banner: ', $e->getMessage();
         }
-        
-        $data['banner'] = $banner;
-        $data['page'] = 'Admin/bannerEditView';
-        $this->view('Admin/indexView', $data);
+     
     }
     
     public function saveEditBanner(){
